@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Akkauntdan foydalanish bosqichlari</title>
+  <desc id="desc">Ro‘yxatdan o‘ting, xaridor yoki sayt yaratuvchi profilini tanlang va so‘rovlaringizni ko‘ring.</desc>
+  <rect width="720" height="300" rx="20" fill="#f3f7e9"/>
+  <text x="36" y="52" fill="#394b25" font-family="Arial,sans-serif" font-size="21" font-weight="700">AKKAUNT OCHISH VA FOYDALANISH</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="34" y="91" width="190" height="156" rx="16" fill="#fff" stroke="#dce8c8" stroke-width="2"/>
+    <circle cx="70" cy="128" r="22" fill="#c9f269"/><text x="70" y="136" fill="#25311b" font-size="22" font-weight="700" text-anchor="middle">1</text>
+    <text x="58" y="181" fill="#242820" font-size="19" font-weight="700">Ro‘yxatdan o‘ting</text>
+    <text x="58" y="211" fill="#69715f" font-size="15">Email yoki Google</text><text x="58" y="232" fill="#69715f" font-size="15">orqali boshlang.</text>
+    <path d="M239 168h34m-10-10 10 10-10 10" fill="none" stroke="#83a943" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="286" y="91" width="190" height="156" rx="16" fill="#fff" stroke="#dce8c8" stroke-width="2"/>
+    <circle cx="322" cy="128" r="22" fill="#f5a078"/><text x="322" y="136" fill="#38251a" font-size="22" font-weight="700" text-anchor="middle">2</text>
+    <text x="310" y="181" fill="#242820" font-size="18" font-weight="700">Profil turini tanlang</text>
+    <text x="310" y="211" fill="#69715f" font-size="15">Xaridor yoki sayt</text><text x="310" y="232" fill="#69715f" font-size="15">yaratuvchi bo‘ling.</text>
+    <path d="M491 168h34m-10-10 10 10-10 10" fill="none" stroke="#83a943" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="538" y="91" width="150" height="156" rx="16" fill="#fff" stroke="#dce8c8" stroke-width="2"/>
+    <circle cx="574" cy="128" r="22" fill="#d9c9f2"/><text x="574" y="136" fill="#29233a" font-size="22" font-weight="700" text-anchor="middle">3</text>
+    <text x="562" y="181" fill="#242820" font-size="18" font-weight="700">Kuzatib boring</text>
+    <text x="562" y="211" fill="#69715f" font-size="14">Buyurtma va so‘rovni</text><text x="562" y="232" fill="#69715f" font-size="14">bo‘limlardan ko‘ring.</text>
+  </g>
+</svg>

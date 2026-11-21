@@ -3,182 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="code-launchy — tayyor sayt va shablonlar bozori, shuningdek ishonchli veb-dasturchi topish maydoni." />
-    <meta name="author" content="Asqarov Muhammadyusuf" />
-    <meta name="theme-color" content="#f7f8f4" />
-    <title>code-launchy — saytingiz uchun to‘g‘ri manzil</title>
-    <script src="js/home-scroll.js"></script>
-    <link rel="icon" type="image/svg+xml" href="assets/code-launchy-logo.svg" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/protection.css" />
+    <meta name="description" content="code-launchy cafe — tayyor kafe sayti namoyishi." />
+    <title>code-launchy cafe — demo sayt</title>
+    <link rel="icon" type="image/svg+xml" href="../../assets/code-launchy-logo.svg" />
+    <link rel="stylesheet" href="../tezz-shop/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../css/protection.css" />
   </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="code-launchy bosh sahifa">
-          <img class="brand-logo" src="assets/code-launchy-logo.svg" alt="" />
-          <span>code<span class="brand-dot">-</span>launchy</span>
-        </a>
-        <nav class="main-nav" aria-label="Asosiy navigatsiya">
-          <a href="#catalog">Tayyor saytlar</a>
-          <a href="#developers">Dasturchilar</a>
-          <a href="orders.html">Buyurtmalar <span id="orderCount" class="nav-count">0</span></a>
-        </nav>
-        <div class="header-actions">
-          <a class="account-link" href="account.html">Kirish</a>
-          <a class="button button-dark nav-cta" href="listing.html">E’lon joylash <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
+  <body class="cafe-demo">
+    <div class="demo-bar"><a href="../../index.html">← code-launchy bozoriga qaytish</a><span>BU — SINAB KO‘RISH UCHUN DEMO SAYT</span></div>
+    <header class="store-header cafe-header">
+      <a class="store-brand" href="#home"><img src="../../assets/code-launchy-logo.svg" alt="" />code<span>-</span>launchy<small>cafe</small></a>
+      <nav aria-label="Kafe menyusi"><a href="#menu">Menyu</a><a href="#story">Biz haqimizda</a><a href="#visit">Manzil</a></nav>
+      <a class="cafe-order" href="#menu">Menyuni ko‘rish ↘</a>
     </header>
-
     <main id="home">
-      <section class="hero">
-        <div class="container hero-layout">
-          <div class="hero-copy">
-            <div class="eyebrow"><span class="eyebrow-dot"></span> O‘zbekistonning saytlar bozori</div>
-            <h1>Saytingizga kerakli<br />hamma narsa <span>shu yerda.</span></h1>
-            <p class="hero-lead">Tayyor sayt yoki dizayn shablonini tanlang. Yoki g‘oyangizni haqiqiy loyihaga aylantiradigan dasturchini toping.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#catalog">Saytlarni ko‘rish <span aria-hidden="true">→</span></a>
-              <a class="button button-outline" href="#developers">Dasturchi topish</a>
-            </div>
-            <div class="hero-proof">
-              <div class="avatar-stack" aria-hidden="true"><span>U</span><span>D</span><span>S</span></div>
-              <p><strong>Ikki yo‘nalish, bitta platforma</strong><br />Sotib oling · buyurtma bering · soting</p>
-            </div>
-          </div>
-          <div class="hero-art" aria-label="Sayt yaratish jarayonining tasviri">
-            <div class="art-orbit orbit-one"></div>
-            <div class="art-orbit orbit-two"></div>
-            <div class="art-spark spark-one">✳</div>
-            <div class="art-spark spark-two">✦</div>
-            <div class="browser-card">
-              <div class="browser-top"><span></span><span></span><span></span><i>your-next-site.uz</i></div>
-              <div class="browser-content">
-                <div class="browser-nav"><b>studio<span>.</span></b><small>Work&nbsp;&nbsp; About&nbsp;&nbsp; Contact</small></div>
-                <div class="browser-title">Make your<br /><em>next move.</em></div>
-                <div class="browser-bottom"><span>DESIGN THAT WORKS</span><b>↗</b></div>
-                <div class="browser-shape"></div>
-              </div>
-            </div>
-            <div class="floating-note note-top"><span class="note-icon">✳</span><span><b>G‘oyadan</b><br />ishga tushgan saytga</span></div>
-            <div class="floating-note note-bottom"><span class="online-dot"></span><span><b>Buyurtma berish oson</b><br />Sotuvchi bilan bevosita aloqa</span></div>
-            <span class="hero-caption">CODE-LAUNCHY — WEB UCHUN BOZOR</span>
-          </div>
+      <section class="cafe-hero">
+        <div class="cafe-title"><span class="cafe-overline">TOSHKENT · HAR KUNI 08:00—22:00</span><h1>Yaxshi qahva.<br /><em>Yaxshi kayfiyat.</em></h1><p>Bir piyola qahva ustida biroz sekinlashib, kunning mazali lahzasidan bahra oling.</p><a href="#menu">Menyuni ko‘rish <span>→</span></a></div>
+        <div class="cafe-cover"><img src="../assets/cafe-interior.jpg" alt="Yorug‘ va shinam kafe ichki ko‘rinishi" /><span>YANGI QOVURILGAN DONLAR</span></div>
+      </section>
+      <section id="menu" class="cafe-menu">
+        <div class="cafe-section-heading"><div><span class="cafe-overline">BIZNING SEVIMLILAR</span><h2>Kichik menyu, katta zavq.</h2></div><p>Rasmlar va menyu bilan tayyorlangan kafe saytini sinab ko‘ring.</p></div>
+        <div class="cafe-items">
+          <article><img src="../assets/cappuccino.jpg" alt="Sutli kapuchino" loading="lazy" /><div><h3>Kapuchino</h3><p>Espresso, sut va yumshoq ko‘pik</p><b>32 000 so‘m</b></div></article>
+          <article><img src="../assets/filter-coffee.jpg" alt="Yangi damlangan qora qahva" loading="lazy" /><div><h3>Filter qahva</h3><p>Yengil, xushbo‘y, yangi damlangan</p><b>28 000 so‘m</b></div></article>
+          <article><img src="../assets/dessert.jpg" alt="Mevali desert" loading="lazy" /><div><h3>Kun deserti</h3><p>Mavsumiy mevalar bilan tayyorlanadi</p><b>39 000 so‘m</b></div></article>
         </div>
       </section>
-
-      <section class="trust-strip" aria-label="Platforma imkoniyatlari">
-        <div class="container trust-inner">
-          <span><b>01</b> Tayyor saytlar</span><span class="trust-divider"></span>
-          <span><b>02</b> Dizayn shablonlari</span><span class="trust-divider"></span>
-          <span><b>03</b> Dasturchi xizmatlari</span><span class="trust-divider"></span>
-          <span><b>04</b> Buyurtmalar nazorati</span>
-        </div>
-      </section>
-
-      <section id="catalog" class="section catalog-section">
-        <div class="container">
-          <div class="section-heading heading-row">
-            <div><span class="eyebrow">01 / KATALOG</span><h2>Keyingi loyihangiz<br />shu yerdan boshlanadi.</h2></div>
-            <p>Tekshirib tanlang: ishga tayyor saytlar, moslab ishlatish uchun shablonlar va o‘z xizmatini taklif qilayotgan mutaxassislar.</p>
-          </div>
-          <div class="catalog-tools">
-            <label class="search-box" for="searchInput"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Sayt, shablon yoki xizmat qidiring..." autocomplete="off" /></label>
-            <div id="catalogFilters" class="filter-list" aria-label="E’lon turini tanlang"></div>
-            <label class="select-wrap"><span class="sr-only">Tartiblash</span><select id="sortSelect"><option value="featured">Tavsiya etilgan</option><option value="low">Arzonidan</option><option value="high">Qimmatidan</option></select></label>
-          </div>
-          <div id="listingGrid" class="listing-grid" aria-live="polite"></div>
-          <div id="emptyCatalog" class="empty-state hidden">Bu qidiruvga mos e’lon topilmadi. Boshqa so‘z bilan qidirib ko‘ring.</div>
-          <p class="demo-note"><span>ⓘ</span> Yorlig‘i bor e’lonlar — namoyish uchun namunalar. Haqiqiy sotuvchi va to‘lov tizimi ulanmaguncha buyurtmalar faqat shu qurilmada saqlanadi.</p>
-        </div>
-      </section>
-
-      <section id="developers" class="section developers-section">
-        <div class="container">
-          <div class="section-heading heading-row">
-            <div><span class="eyebrow">02 / MUTAXASSISLAR</span><h2>G‘oyangiz bormi?<br /><span class="text-accent">Ustasi shu yerda.</span></h2></div>
-            <p>Veb-saytingizni noldan yasab beradigan dasturchilar xizmatini ko‘ring. Taklifni tanlang va loyiha tafsilotlarini yuboring.</p>
-          </div>
-          <div id="developerGrid" class="developer-grid" aria-live="polite"></div>
-          <div id="emptyDevelopers" class="empty-state hidden">Hozircha dasturchi e’lonlari yo‘q. Birinchi bo‘lib o‘z xizmatingizni e’lon qiling.</div>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="section how-section">
-        <div class="container">
-          <div class="section-heading"><span class="eyebrow">ODDIY VA TUSHUNARLI</span><h2>Toping. Kelishing. Boshlang.</h2></div>
-          <div class="steps-grid">
-            <article class="step-card"><span class="step-number">01</span><div class="step-icon">⌕</div><h3>Keraklisini tanlang</h3><p>Katalogdan tayyor sayt yoki shablonni toping, yoxud dasturchi xizmatlarini ko‘ring.</p></article>
-            <article class="step-card"><span class="step-number">02</span><div class="step-icon">↗</div><h3>So‘rov yuboring</h3><p>Aloqa ma’lumotingiz va loyiha tafsilotlarini yozing. Buyurtma ro‘yxatingizga qo‘shiladi.</p></article>
-            <article class="step-card"><span class="step-number">03</span><div class="step-icon">✳</div><h3>Bevosita kelishing</h3><p>Sotuvchi bilan narx, muddat va topshirish shartlarini aniqlashtiring.</p></article>
-          </div>
-        </div>
-      </section>
-
+      <section id="story" class="cafe-story"><img src="../assets/coffee-making.jpg" alt="Kafedagi qahva donlari va qahva tayyorlash jarayoni" loading="lazy" /><div><span class="cafe-overline">YAXSHI NARSALAR ODDIY</span><h2>Har bir piyolada<br />mehr bor.</h2><p>Mahalliy qahva ixlosmandlari uchun yaratilgan shinam maskan. Bu tayyor demo saytda kafe tarixi, menyu, rasmlar va manzil bo‘limlarini ko‘rishingiz mumkin.</p><a href="#visit">Bizni toping ↓</a></div></section>
+      <section id="visit" class="cafe-visit"><span class="cafe-overline">SIZNI KUTAMIZ</span><h2>Shahar markazi, Toshkent</h2><p>Bu manzil namuna uchun. Haqiqiy loyiha topshirilganda o‘zgartiriladi.</p><a href="../../index.html">code-launchy bozoriga qaytish ↗</a></section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container footer-main">
-        <a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/code-launchy-logo.svg" alt="" /><span>code<span class="brand-dot">-</span>launchy</span></a>
-        <p>Veb-g‘oyalar uchun uchrashuv joyi.</p>
-        <a href="listing.html">E’lon joylash <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="container footer-bottom"><span>© 2026 Asqarov Muhammadyusuf. Barcha huquqlar himoyalangan.</span><span>O‘zbekiston uchun yaratilgan <b>♥</b></span></div>
-      <div class="container copyright-notice">Muallif: Asqarov Muhammadyusuf. code-launchy saytining original dizayni, matnlari va dasturiy kodi mualliflik huquqi bilan himoyalangan. Ruxsatsiz nusxalash, tarqatish yoki o‘zgartirib e’lon qilishga yo‘l qo‘yilmaydi. Uchinchi tomon materiallari tegishli egalariga tegishli. Bu demo: kod va brauzer xotirasidagi ma’lumotlar DevTools orqali ko‘rinishi mumkin. <a href="https://lex.uz/docs/1022944" target="_blank" rel="noopener noreferrer">Mualliflik huquqi to‘g‘risidagi qonun ↗</a></div>
-      <div class="container creator-credit">Created by <strong>asqarow_17</strong></div>
-    </footer>
-
-    <aside class="assistant-widget" aria-label="Gemini AI yordamchisi">
-      <section id="assistantPanel" class="assistant-panel" aria-label="Sayt bo‘yicha savol-javob" hidden>
-        <header class="assistant-header">
-          <div class="assistant-header-icon" aria-hidden="true">✦</div>
-          <div class="assistant-heading"><h2>Gemini yordamchi</h2><p>Chat tarixi shu qurilmada saqlanadi</p></div>
-          <button id="assistantClear" class="assistant-clear" type="button" aria-label="Chat tarixini tozalash">Tozalash</button>
-          <button id="assistantClose" class="assistant-close" type="button" aria-label="Yordamchini yopish">×</button>
-        </header>
-        <div id="assistantMessages" class="assistant-messages" aria-live="polite">
-          <div class="assistant-welcome">
-            <p>Salom! Men Gemini yordamchisiman. Turli mavzularda savol bering; saytimiz haqida so‘rasangiz, rasmli yo‘riqnoma ham ko‘rsataman.</p>
-          </div>
-        </div>
-        <div class="assistant-prompts" aria-label="Namunaviy savollar">
-          <button type="button" data-assistant-prompt="Saytni qanday sotib olaman?">Saytni qanday olaman?</button>
-          <button type="button" data-assistant-prompt="Qanday qilib e’lon joylayman?">E’lon joylash</button>
-          <button type="button" data-assistant-prompt="Akkauntni qanday ochaman?">Akkaunt ochish</button>
-        </div>
-        <form id="assistantForm" class="assistant-form">
-          <label class="sr-only" for="assistantInput">Savolingiz</label>
-          <textarea id="assistantInput" maxlength="600" rows="2" placeholder="Savolingizni yozing..." required></textarea>
-          <button id="assistantSend" class="assistant-send" type="submit" aria-label="Savolni yuborish">→</button>
-        </form>
-        <p class="assistant-disclaimer">Javoblar Gemini tomonidan yaratiladi; muhim ma’lumotlarni tekshirib oling.</p>
-      </section>
-      <button id="assistantOpen" class="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistantPanel">
-        <span aria-hidden="true">✦</span> AI yordamchi
-      </button>
-    </aside>
-
-    <dialog id="orderDialog" class="order-dialog" aria-labelledby="dialogTitle">
-      <form id="orderForm" method="dialog">
-        <button class="dialog-close" type="button" aria-label="Yopish">×</button>
-        <span id="dialogEyebrow" class="eyebrow">BUYURTMA SO‘ROVI</span>
-        <h2 id="dialogTitle">Buyurtma berish</h2>
-        <p id="dialogListing" class="dialog-listing"></p>
-        <input id="dialogListingId" name="listingId" type="hidden" />
-        <div class="field"><label for="buyerName">Ismingiz</label><input id="buyerName" name="buyerName" type="text" maxlength="50" required placeholder="Ism familiyangiz" /></div>
-        <div class="field"><label for="buyerContact">Telefon yoki Telegram</label><input id="buyerContact" name="buyerContact" type="text" maxlength="80" required placeholder="+998 90 123 45 67 yoki @username" /></div>
-        <div class="field"><label for="buyerNote">Izoh (ixtiyoriy)</label><textarea id="buyerNote" name="note" rows="3" maxlength="300" placeholder="Savolingiz yoki loyiha tafsilotlari"></textarea></div>
-        <button id="dialogSubmit" class="button button-primary button-wide" type="submit">So‘rovni saqlash <span aria-hidden="true">→</span></button>
-        <p class="dialog-disclaimer">code-launchy demo rejimida ishlayapti: so‘rov sotuvchiga avtomatik yuborilmaydi. U bilan aloqani o‘zingiz kelishasiz.</p>
-      </form>
-    </dialog>
-
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <script src="js/database.js"></script>
-    <script src="js/reveal.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/assistant.js"></script>
-    <script src="js/protection.js"></script>
+    <footer class="shop-footer"><a class="store-brand" href="#home"><img src="../../assets/code-launchy-logo.svg" alt="" />code<span>-</span>launchy<small>cafe</small></a><p>Kafe uchun tayyor veb-sayt namoyishi.</p><a href="../../index.html">Bozorga qaytish ↑</a></footer>
+    <script src="../../js/protection.js"></script>
   </body>
 </html>

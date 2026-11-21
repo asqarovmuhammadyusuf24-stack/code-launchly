@@ -1,0 +1,40 @@
+::selection {
+  color: #20221e;
+  background: #d5f17e;
+}
+
+::-moz-selection {
+  color: #20221e;
+  background: #d5f17e;
+}
+
+.protection-notice {
+  position: fixed;
+  z-index: 1000;
+  right: 18px;
+  bottom: 18px;
+  max-width: min(390px, calc(100vw - 36px));
+  padding: 13px 17px;
+  transform: translateY(12px);
+  border: 1px solid #dfe8cc;
+  border-radius: 7px;
+  color: #394b25;
+  background: #f4f9e9;
+  box-shadow: 0 12px 35px #15181224;
+  font-size: .79rem;
+  line-height: 1.5;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.protection-notice.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .protection-notice {
+    transition: none;
+  }
+}
