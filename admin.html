@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="code-launchy demo ma’muriyat paneli: e’lonlarni tekshirish, buyurtma va foydalanuvchilarni ko‘rish." />
+    <meta name="theme-color" content="#f7f8f4" />
+    <title>Admin paneli — code-launchy</title>
+    <link rel="icon" type="image/svg+xml" href="assets/code-launchy-logo.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/protection.css" />
+  </head>
+  <body class="market-page admin-page">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="code-launchy bosh sahifa"><img class="brand-logo" src="assets/code-launchy-logo.svg" alt="" /><span>code<span class="brand-dot">-</span>launchy</span></a>
+        <nav class="main-nav" aria-label="Asosiy navigatsiya"><a href="index.html">Bozor</a><a href="listing.html">E’lon joylash</a><a href="orders.html">Buyurtmalar</a></nav>
+        <div class="header-actions"><a class="account-link" href="account.html">Kirish</a><button id="adminLogout" class="button button-dark nav-cta" type="button">Chiqish</button></div>
+      </div>
+    </header>
+    <main class="admin-main container">
+      <section id="adminGate" class="admin-gate page-card hidden">
+        <span class="eyebrow">CHEKLANGAN BO‘LIM</span><h1>Admin hisobi kerak.</h1>
+        <p>Panelni faqat admin demo hisobi bilan ochish mumkin.</p>
+        <a class="button button-primary" href="account.html?next=admin.html">Admin hisobiga kirish →</a>
+      </section>
+      <div id="adminDashboard" class="hidden">
+        <div class="admin-heading">
+          <div><span class="eyebrow">CODE-LAUNCHY / BOSHQARUV</span><h1>Admin paneli<span>.</span></h1><p>E’lonlarni tekshiring, buyurtmalar va ro‘yxatdan o‘tgan hisoblarni ko‘ring.</p></div>
+          <span class="admin-demo-badge">DEMO ADMIN</span>
+        </div>
+        <div class="admin-warning"><strong>Demo rejim.</strong> Bu boshqaruv faqat shu brauzerda amal qiladi. Haqiqiy saytda server tomoni ruxsat tekshiruvi, himoyalangan sessiya va umumiy baza talab qilinadi.</div>
+        <section class="admin-stats" aria-label="Umumiy ko‘rsatkichlar">
+          <article><span>JAMI E’LONLAR</span><strong id="statListings">0</strong></article>
+          <article><span>KUTILAYOTGANLAR</span><strong id="statPending">0</strong></article>
+          <article><span>BUYURTMALAR</span><strong id="statOrders">0</strong></article>
+          <article><span>HISOBLAR</span><strong id="statUsers">0</strong></article>
+        </section>
+        <nav class="admin-tabs" aria-label="Admin bo‘limlari">
+          <button class="admin-tab active" type="button" data-panel="moderation">E’lonlar <span id="pendingBadge">0</span></button>
+          <button class="admin-tab" type="button" data-panel="orders">Buyurtmalar</button>
+          <button class="admin-tab" type="button" data-panel="users">Foydalanuvchilar</button>
+        </nav>
+        <section id="moderationPanel" class="admin-panel">
+          <div class="admin-panel-heading"><div><h2>E’lonlarni tekshirish</h2><p>Tasdiqlangan e’lonlar katalogda ko‘rinadi.</p></div></div>
+          <div id="adminListings" class="admin-list"></div>
+        </section>
+        <section id="ordersPanel" class="admin-panel hidden">
+          <div class="admin-panel-heading"><div><h2>Buyurtma so‘rovlari</h2><p>Xaridorlar saqlagan demo so‘rovlari.</p></div></div>
+          <div id="adminOrders" class="admin-list"></div>
+        </section>
+        <section id="usersPanel" class="admin-panel hidden">
+          <div class="admin-panel-heading"><div><h2>Hisoblar</h2><p>Demo foydalanuvchilar va rollar.</p></div></div>
+          <div id="adminUsers" class="admin-list"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main"><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/code-launchy-logo.svg" alt="" /><span>code<span class="brand-dot">-</span>launchy</span></a><p>Veb-g‘oyalar uchun uchrashuv joyi.</p><a href="index.html">Bozorga qaytish ↗</a></div>
+      <div class="container footer-bottom"><span>© 2026 code-launchy. Barcha huquqlar himoyalangan.</span><span>O‘zbekiston uchun yaratilgan <b>♥</b></span></div>
+      <div class="container copyright-notice">Loyiha kodining original qismlari O‘RQ-42-son Qonunning 6-moddasiga ko‘ra mualliflik huquqi bilan himoyalanishi mumkin. Ruxsatsiz nusxalash yoki tarqatishdan oldin litsenziyani tekshiring. Bu demo: kod va brauzer xotirasidagi ma’lumotlar DevTools orqali ko‘rinishi mumkin. <a href="https://lex.uz/docs/1022944" target="_blank" rel="noopener noreferrer">Qonun matni ↗</a></div>
+      <div class="container creator-credit">Created by <strong>asqarow_17</strong></div>
+    </footer>
+    <script src="js/database.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/protection.js"></script>
+  </body>
+</html>
+
+npm install -g firebase-tools
+firebase login
+firebase init
+firebase deploy
